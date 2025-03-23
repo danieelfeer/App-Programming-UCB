@@ -1,37 +1,44 @@
-import { BaseItem } from "./BaseItem";
+export class Category {
+  private id: string;
+  name: string;
+  description: string;
+  createdAt: Date;
 
-export class Category extends BaseItem {
   constructor(id: string, name: string, description: string) {
-    super(id, name, description);
+    this.id = id;
+    this.name = name;
+    this.description = description;
+    this.createdAt = new Date();
   }
 
-  //Getters and Setters
+  //Getters
   public getId(): string {
     return this.id;
-  }
-
-  public setId(id: string): void {
-    this.id = id;
   }
 
   public getName(): string {
     return this.name;
   }
 
-  public setName(name: string): void {
-    this.name = name;
-  }
-
   public getDescription(): string {
     return this.description;
   }
 
-  public setDescription(description: string): void {
-    this.description = description;
-  }
-
   public getCreatedAt(): Date {
     return this.createdAt;
+  }
+
+  // Setters
+  public setId(id: string): void {
+    this.id = id;
+  }
+
+  public setName(name: string): void {
+    this.name = name;
+  }
+
+  public setDescription(description: string): void {
+    this.description = description;
   }
 
   public setCreatedAt(createdAt: Date): void {

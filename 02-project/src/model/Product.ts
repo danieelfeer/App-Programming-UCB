@@ -1,6 +1,6 @@
-import { BaseItem } from "./BaseItem";
+import { Category } from "./Category";
 
-export class Product extends BaseItem{
+export class Product extends Category{
     
     private price: number;
     private quantity: number;
@@ -14,7 +14,6 @@ export class Product extends BaseItem{
         price: number,
         quantity: number,
         categoryId: string,
-        updatedAt: Date
     ) {
         super(id, name, description);
         this.price = price;
