@@ -7,7 +7,8 @@ This project is a Command Line Interface (CLI) based **Inventory Management Syst
 The application provides the following functionality:
 
 ### 📊 UML Class Diagram
-```
+
+```mermaid
 classDiagram
   class Category {
     -String id
@@ -35,7 +36,7 @@ classDiagram
     +getCreatedAt(): Date
   }
 
-  Category "1" *-- "N" Product : "has"
+  Category "1" *-- "N" Product
 ```
 
 ### Category Management
