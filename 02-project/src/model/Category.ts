@@ -1,8 +1,16 @@
+import { Column, Entity, PrimaryColumn, PrimaryGeneratedColumn } from "typeorm";
+
+@Entity()
 export class Category {
+
+  @PrimaryColumn()
   private id: string;
-  name: string;
-  description: string;
-  createdAt: Date;
+  @Column()
+  private name: string;
+  @Column()
+  private description: string;
+  @Column()
+  private createdAt: Date;
 
   constructor(id: string, name: string, description: string) {
     this.id = id;

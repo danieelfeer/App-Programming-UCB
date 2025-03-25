@@ -1,10 +1,16 @@
+import { Column, Entity, PrimaryColumn } from "typeorm";
 import { Category } from "./Category";
 
+@Entity()
 export class Product extends Category{
     
+    @PrimaryColumn()
     private price: number;
+    @Column()
     private quantity: number;
+    @Column()
     private categoryId: string;
+    @Column()
     private updatedAt: Date;
 
     constructor(
