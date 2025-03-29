@@ -2,4 +2,6 @@
 - Mateus Cerqueira Gonzaga - UC23200593
 - Bruno Henrique Souza Lima - UC23200746
 - Guilherme Rodrigues Caze - UC23200199
-- Mariana Carvalho Ribeiro - 
+- Mariana Carvalho Ribeiro -
+- Leandro de Souza Farias - UC23102298
+- Ademar Neto Seabra Fonseca - UC23102954
