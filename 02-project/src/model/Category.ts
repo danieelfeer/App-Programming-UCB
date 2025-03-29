@@ -6,9 +6,9 @@ export class Category {
   @PrimaryColumn()
   id: string; //@@ retirar o private;
   @Column()
-  private name: string;
+  name: string; //@@ retirar o private;
   @Column()
-  private description: string;
+  description: string; //@@ retirar o private;
   @Column()
   private createdAt: Date;
 

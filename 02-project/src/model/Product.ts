@@ -1,4 +1,4 @@
-import { Column, Entity, PrimaryColumn } from "typeorm";
+import { Column, Entity } from "typeorm";
 import { Category } from "./Category";
 
 @Entity()
@@ -7,9 +7,9 @@ export class Product extends Category{
     @Column()
     private price: number;
     @Column()
-    private quantity: number;
+    private quantity: number; 
     @Column()
-    private categoryId: string;
+    categoryId: string; //@@ retirar o private;
     @Column()
     private updatedAt: Date;
 
