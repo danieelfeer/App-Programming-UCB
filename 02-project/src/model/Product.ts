@@ -4,7 +4,7 @@ import { Category } from "./Category";
 @Entity()
 export class Product extends Category{
     
-    @PrimaryColumn()
+    @Column()
     private price: number;
     @Column()
     private quantity: number;

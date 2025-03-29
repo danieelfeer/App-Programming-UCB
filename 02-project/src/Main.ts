@@ -13,6 +13,7 @@ export class Main {
     while (true) {
       console.log("\n--- Menu ---");
       console.log("1. Create Category");
+      console.log("2. List");
       console.log("3. Exit");
 
       const choice = prompt("Choice: ");

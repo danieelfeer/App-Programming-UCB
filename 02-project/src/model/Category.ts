@@ -4,7 +4,7 @@ import { Column, Entity, PrimaryColumn, PrimaryGeneratedColumn } from "typeorm";
 export class Category {
 
   @PrimaryColumn()
-  private id: string;
+  id: string; //@@ retirar o private;
   @Column()
   private name: string;
   @Column()
